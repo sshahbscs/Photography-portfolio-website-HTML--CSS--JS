@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe Photography</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/5bc4067c57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>John Doe </h1>
+        <nav class="navbar">
+            <ul class="list">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+          <div class="hero-text">
+            <h2>Creative Photography</h2>
+            <p>Take our services to make your memories beautiful</p>
+            <button onclick="navigateToSection('portfolio')">View Gallery</button>
+          </div>
+          <script>
+            function navigateToSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            </script>
+        </section>
+
+        <section id="portfolio">
+            <h2>Explore the stunning photography</h2>
+            <div class="grid-container">
+                <img class="grid-item" src="./image2.jpg"/>
+                <img class="grid-item" src="./image3.jpg"/>
+                <img class="grid-item" src="./image4.png"/>
+                <img class="grid-item" src="./image5.avif"/>
+                <img class="grid-item" src="./image6.jpg"/>
+                <img class="grid-item" src="./image7.jpg"/>
+                <img class="grid-item" src="./image8.jpg"/>
+                <img class="grid-item" src="./image9.avif"/>
+                <img class="grid-item a" src="./image1.jpg"/>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>Discover the photography services offered by John Doe.</p>
+            <div class="packages">
+                <div class="columns">
+                    <ul class="price">
+                      <li class="package-name">Basic</li>
+                      <li class="grey">$ 500</li>
+                      <li>Event Photography</li>
+                      <li>150-250 Soft-copies</li>
+                      <li>Video Highlights</li>
+                      <li>Full Event Video</li>
+                      <li>Coverage 2 Hour Event</li>
+                      <li class="grey"><a href="contact.html" class="button">Book Now</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="columns">
+                    <ul class="price">
+                      <li class="package-name" style="background-color:rgb(252, 120, 33)">Pro</li>
+                      <li class="grey">$ 1100</li>
+                      <li>Event Photography</li>
+                      <li>300-400 Soft-copies</li>
+                      <li>2 Video Highlights</li>
+                      <li>2 Full Event Video</li>
+                      <li>Coverage 4 Hour Event</li>
+                      <li class="grey"><a href="contact.html" class="button">Book Now</a></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="columns">
+                    <ul class="price">
+                      <li class="package-name">Premium</li>
+                      <li class="grey">$ 1500</li>
+                      <li>Event Photography</li>
+                      <li>400-650 Soft-copies</li>
+                      <li>3 Video Highlights</li>
+                      <li>3 Full Event Video</li>
+                      <li>Coverage 5 Hour Event</li>
+                      <li class="grey"><a href="contact.html" class="button">Book Now</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <!-- Add information about services offered -->
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <p>See what clients are saying about John Doe's work.</p>
+            <!-- Add client testimonials or reviews here -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                          <div class="card-body">
+                            <h5>Charles Methew<br />
+                              <span> Client </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                              impedit quo minus id quod maxime placeat ” </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                          <div class="card-body">
+                            <h5>Jurica Koletic<br />
+                              <span> Client </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                              impedit quo minus id quod maxime placeat ” </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+                          <div class="card-body">
+                            <h5>Ronne Galle <br />
+                              <span> Client </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                              impedit quo minus id quod maxime placeat ” </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                        <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                          <div class="card-body">
+                            <h5>Martha Brown<br />
+                              <span> Client </span>
+                            </h5>
+                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                              impedit quo minus id quod maxime placeat ” </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  loop:true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                });
+              </script>
+        </section>
+
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <div class="mission-details">
+                <img src="https://i.pinimg.com/originals/e4/9c/15/e49c1560b487216aadfa19f35b48f6c6.png" alt="">
+                <p>
+
+                    Our mission is to democratize access to professional portrait photography by disrupting the traditional business model for freelance photographers.
+                    <br/>
+                    Shoott's business model works because we aggregate demand at our locations, which allows us to pass along the benefit to both clients and photographers.
+                    <br/>
+                    We’re proud to offer our photographers a minimum pay guarantee per shooting hour, flexible scheduling, tips and regular paychecks.
+                </p>
+            </div>
+            <hr class="footer-row">
+            <!-- Add blog posts or links to blog articles here -->
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer-distributed">
+        
+        <div class="footer-left">
+
+            <h3>John<span>Doe</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#">Blog</a>
+            
+                <a href="#">Pricing</a>
+            
+                <a href="#">About</a>
+                
+                <a href="#">Faq</a>
+                
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">John Doe Photography © 2024</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

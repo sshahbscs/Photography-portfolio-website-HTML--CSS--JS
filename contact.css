@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+.contact-details{
+    padding: 2rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-radius: 25px;
+
+}
+.hero{
+    z-index: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./background-pic.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:98vh;
+    margin-top: -8rem;
+
+}
+#contact-form h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+#contact-form p{
+    font-size: .93rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    align-items: center;
+    margin: 0 auto;
+    gap:2rem;
+}
+.form div{
+    /* display: flex; */
+    align-items: center;
+    gap:1.5rem
+}
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 30rem; /* Adjust the width as needed */
+    padding: 0.5rem; /* Optional: Add padding for better appearance */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    outline: 0;
+    border:0;
+    border-radius: 5px;
+}
+textarea{
+    /* margin-left: -1rem; */
+} 
+.submit-button{
+    background: #50a797;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    width: fit-content;
+}
+#map{
+    margin-bottom: -7px;
+    text-align: center;
+    color:#01b0f8;
+}
+#map h2{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+iframe{
+    height: 40vh;
+    width: 100vw;
+}
